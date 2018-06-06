@@ -2,9 +2,122 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Survey Form - Free Code Camp Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body>
-
+  <body class="">
+    <div class="container background-white-smoke font-roboto">
+      <div id="header-survey" class="row">
+        <div class="col-md-12 text-tart-orange text-center ">
+          <h1 id="title" class="font-dancing-script">Survey Form</h1>
+          <p id="description" class="font-prata">My form description</p>
+        </div>
+      </div>
+      <div id="container-survey" class="row text-bondi-blue">
+        <div class="col-md-12">
+          <form id="survey-form" class="">
+            <div class="col-md-8 offset-md-2 form-group">
+              <label for="name" id="name-label">Name:</label>
+              <input id="name" type="text" class="form-control col-md-12" name="name" value="" placeholder="Enter your name." required>
+            </div>
+            <div class="col-md-8 offset-md-2 form-group">
+              <label for="email" id="email-label">Email:</label>
+              <input id="email" type="email" class="form-control col-md-12" name="email" value="" placeholder="Enter your email." required>
+            </div>
+            <div class="col-md-8 offset-md-2 form-group">
+              <label for="number" id="number-label">Age:</label>
+              <input id="number" type="number" class="form-control col-md-12" name="age" value="" min="1" max="100" placeholder="Enter your age." required>
+            </div>
+            <div class="col-md-8 offset-md-2 form-group">
+              <label for="dropdown" id="dropdown-label">Dropdown option:</label>
+              <select id="dropdown" class="form-control" name="dropdown">
+                <option value="">Select an option</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                <option>Option 5</option>
+              </select>
+            </div>
+            <div class="col-md-8 offset-md-2 form-group">
+              <label for="number" id="number-label">Radios:</label>
+              <div class="row">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="radio" id="radio1" value="option1">
+                  <label class="form-check-label" for="radio1">Option 1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="radio" id="radio2" value="option2">
+                  <label class="form-check-label" for="radio2">Option 2</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 offset-md-2 form-group">
+              <label for="number" id="number-label">Checkboxes:</label>
+              <div class="col-md-12">
+                <div class="table-responsive">
+                  <table class="table">
+                    <tr>
+                      <td>
+                        <input class="form-check-input" type="checkbox" name="checkbox" id="checkbox1" value="option1">
+                        <label class="form-check-label" for="checkbox1">Option 1</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="checkbox" name="checkbox" id="checkbox2" value="option2">
+                        <label class="form-check-label" for="checkbox2">Option 2</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="checkbox" name="checkbox" id="checkbox3" value="option3">
+                        <label class="form-check-label" for="checkbox3">Option 3</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input class="form-check-input" type="checkbox" name="checkbox" id="checkbox4" value="option4">
+                        <label class="form-check-label" for="checkbox4">Option 4</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="checkbox" name="checkbox" id="checkbox5" value="option5">
+                        <label class="form-check-label" for="checkbox5">Option 5</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="checkbox" name="checkbox" id="checkbox6" value="option6">
+                        <label class="form-check-label" for="checkbox6">Option 6</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input class="form-check-input" type="checkbox" name="checkbox" id="checkbox7" value="option7">
+                        <label class="form-check-label" for="checkbox7">Option 7</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="checkbox" name="checkbox" id="checkbox8" value="option8">
+                        <label class="form-check-label" for="checkbox8">Option 8</label>
+                      </td>
+                      <td>
+                        <input class="form-check-input" type="checkbox" name="checkbox" id="checkbox9" value="option9">
+                        <label class="form-check-label" for="checkbox9">Option 9</label>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 offset-md-2 form-group">
+              <label for="textarea" id="textarea-label">Aditional comments:</label>
+              <textarea id="textarea" name="textarea" class="form-control"></textarea>
+            </div>
+            <div class="col-md-8 offset-md-2 text-center">
+              <button id="submit" class="btn btn-primary" type="submit" name="button">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>

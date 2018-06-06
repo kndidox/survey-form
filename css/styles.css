@@ -1,0 +1,35 @@
+.text-tart-orange {
+  color: #FE4A49;
+}
+
+.text-bondi-blue {
+  color: #009FB7;
+}
+
+.background-platinum {
+  background-color: #E6E6EA;
+}
+
+.background-white-smoke {
+  background-color: #F4F4F8;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-prata {
+  font-family: 'Prata', serif;
+}
+
+.font-dancing-script {
+  font-family: 'Dancing Script', cursive;
+}
+
+#radio1, #radio2 {
+  margin-left: 20px;
+}
+
+body {
+  background-color: #E6E6EA;
+}
